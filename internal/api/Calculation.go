@@ -44,5 +44,9 @@ func Division(w http.ResponseWriter, r *http.Request) {
 	if err != nil && err2 != nil {
 		return
 	}
+	if b == 0 {
+		json.NewEncoder(w).Encode("Cannot divide by zero")
+		return
+	}
 	json.NewEncoder(w).Encode(a / b)
 }
