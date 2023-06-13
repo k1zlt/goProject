@@ -1,0 +1,19 @@
+#### 1
+GET localhost:8000/div?a=10&b=10
+Authorization: token
+
+#### 2
+GET localhost:8000/div?a=1&b=1
+Authorization: token
+
+#### 3
+GET localhost:8000/div?a=12&b=0
+Authorization: token
+
+#### 4
+GET localhost:8000/div?a=0&b=10
+Authorization: token
+
+#### 5
+GET localhost:8000/div?a=100000&b=10000
+Authorization: token

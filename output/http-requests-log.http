@@ -1,0 +1,190 @@
+GET http://localhost:8000/add?a=100000&b=10000
+Authorization: token
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-13T150041-4.200.txt
+
+###
+
+GET http://localhost:8000/add?a=0&b=10
+Authorization: token
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-13T150041-3.200.txt
+
+###
+
+GET http://localhost:8000/add?a=12&b=0
+Authorization: token
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-13T150041-2.200.txt
+
+###
+
+GET http://localhost:8000/add?a=1&b=1
+Authorization: token
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-13T150041-1.200.txt
+
+###
+
+GET http://localhost:8000/add?a=10&b=10
+Authorization: token
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-13T150041.200.txt
+
+###
+
+GET http://localhost:8000/mul?a=100000&b=10000
+Authorization: token
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-13T150038-2.200.txt
+
+###
+
+GET http://localhost:8000/mul?a=0&b=10
+Authorization: token
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-13T150038-1.200.txt
+
+###
+
+GET http://localhost:8000/mul?a=12&b=0
+Authorization: token
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-13T150038.200.txt
+
+###
+
+GET http://localhost:8000/mul?a=1&b=1
+Authorization: token
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-13T150037-1.200.txt
+
+###
+
+GET http://localhost:8000/mul?a=10&b=10
+Authorization: token
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-13T150037.200.txt
+
+###
+
+GET http://localhost:8000/sub?a=100000&b=10000
+Authorization: token
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-13T150034.200.txt
+
+###
+
+GET http://localhost:8000/sub?a=0&b=10
+Authorization: token
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-13T150033-3.200.txt
+
+###
+
+GET http://localhost:8000/sub?a=12&b=0
+Authorization: token
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-13T150033-2.200.txt
+
+###
+
+GET http://localhost:8000/sub?a=1&b=1
+Authorization: token
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-13T150033-1.200.txt
+
+###
+
+GET http://localhost:8000/sub?a=10&b=10
+Authorization: token
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-13T150033.200.txt
+
+###
+
+GET http://localhost:8000/div?a=100000&b=10000
+Authorization: token
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-13T150024-2.200.txt
+
+###
+
+GET http://localhost:8000/div?a=0&b=10
+Authorization: token
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-13T150024-1.200.txt
+
+###
+
+GET http://localhost:8000/div?a=1&b=1
+Authorization: token
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-13T150024.200.txt
+
+###
+
+GET http://localhost:8000/div?a=10&b=10
+Authorization: token
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-13T150023.200.txt
+
+###
+
