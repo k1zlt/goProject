@@ -14,10 +14,11 @@ const (
 	dbname   = "postgres"
 )
 
+var connectStr = fmt.Sprintf("host=%s port=%d user=%s "+
+	"password=%s dbname=%s sslmode=disable", host, port, user, password, dbname)
+
 func main() {
-	db, err := sql.Open("postgres", fmt.Sprintf("host=%s port=%d user=%s "+
-		"password=%s dbname=%s sslmode=disable",
-		host, port, user, password, dbname))
+	db, err := sql.Open("postgres", connectStr)
 	if err != nil {
 		panic(err)
 	}
