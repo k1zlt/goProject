@@ -18,7 +18,7 @@ func (h *Handler) InitRoutes() *mux.Router {
 	r := mux.NewRouter()
 
 	r.HandleFunc("/lessons/{id}", h.getLessonByID).Methods(http.MethodGet)
-	r.HandleFunc("/lessons/{id}/video", h.getVideoByID).Methods(http.MethodGet)
+	r.HandleFunc("/lessons/{id}/video", h.getVideoByLessonID).Methods(http.MethodGet)
 
 	return r
 }

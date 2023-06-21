@@ -1,12 +1,8 @@
-package repository
+package postgres
 
 import (
 	"fmt"
 	"github.com/jmoiron/sqlx"
-)
-
-const (
-	lessons = "lesson.lesson"
 )
 
 type Config struct {

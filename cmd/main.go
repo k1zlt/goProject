@@ -3,6 +3,7 @@ package main
 import (
 	"first/internal/handler"
 	"first/internal/repository"
+	"first/internal/repository/postgres"
 	"first/internal/server"
 	"first/internal/service"
 	_ "github.com/lib/pq"
@@ -11,7 +12,7 @@ import (
 
 func main() {
 
-	db, err := repository.ConnectToPostgresDB(repository.Config{
+	db, err := postgres.ConnectToPostgresDB(postgres.Config{
 		Host:     "localhost",
 		Port:     "5432",
 		Username: "postgres",
@@ -20,7 +21,7 @@ func main() {
 		SSLMode:  "disable",
 	})
 	if err != nil {
-		log.Fatalf("failed to initialize database: %s", err.Error())
+		log.Fatalf("failed to connect database: %s", err.Error())
 	}
 
 	repo := repository.NewRepository(db)
