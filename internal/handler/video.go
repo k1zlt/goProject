@@ -23,6 +23,6 @@ func (h *Handler) getVideoByLessonID(w http.ResponseWriter, r *http.Request) {
 
 	_, err = w.Write(video.Data)
 	if err != nil {
-
+		http.Error(w, err.Error(), http.StatusInternalServerError)
 	}
 }
