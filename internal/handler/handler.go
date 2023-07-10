@@ -17,8 +17,14 @@ func NewHandler(services *service.Service) *Handler {
 func (h *Handler) InitRoutes() *mux.Router {
 	r := mux.NewRouter()
 
-	r.HandleFunc("/lessons/{id}", h.getLessonByID).Methods(http.MethodGet)
-	r.HandleFunc("/lessons/{id}/video", h.getVideoByLessonID).Methods(http.MethodGet)
+	auth := r.PathPrefix("/auth").Subrouter()
+	auth.HandleFunc("/sign-in", h.signIn).Methods(http.MethodPost)
+	auth.HandleFunc("/sign-up", h.signUp).Methods(http.MethodPost)
+
+	lessons := r.PathPrefix("/lessons").Subrouter()
+	lessons.Use(h.authorizeUser, h.checkEndpointPermission)
+	lessons.HandleFunc("/{id}", h.getLessonByID).Methods(http.MethodGet)
+	lessons.HandleFunc("/{id}/video", h.getVideoByLessonID).Methods(http.MethodGet)
 
 	return r
 }

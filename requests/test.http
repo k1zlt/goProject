@@ -1,0 +1,43 @@
+POST http://localhost:8080/auth/sign-in
+Content-Type: application/json
+
+{
+  "username": "Rock",
+  "password": "itsmyworld32"
+}
+
+###
+
+POST http://localhost:8080/auth/sign-in
+Content-Type: application/json
+
+{
+  "username": "Shokha",
+  "password": "12345"
+}
+
+###
+
+GET http://localhost:8080/lessons/3
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODg5ODQ0NTIsInVzZXJfaWQiOjZ9.tXbBOynsQoX9Z1F9sWNCuQB1ydb0BtNDt71SkfCZKrE
+
+###
+
+GET http://localhost:8080/lessons/4
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODg5ODQ0NTIsInVzZXJfaWQiOjZ9.tXbBOynsQoX9Z1F9sWNCuQB1ydb0BtNDt71SkfCZKrE
+
+###
+
+GET http://localhost:8080/lessons/3/video
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODg5ODQ0NTIsInVzZXJfaWQiOjZ9.tXbBOynsQoX9Z1F9sWNCuQB1ydb0BtNDt71SkfCZKrE
+
+###
+
+GET http://localhost:8080/lessons/4/video
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODg5ODQ0NTIsInVzZXJfaWQiOjZ9.tXbBOynsQoX9Z1F9sWNCuQB1ydb0BtNDt71SkfCZKrE
+
+###

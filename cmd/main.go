@@ -6,11 +6,15 @@ import (
 	"first/internal/repository/postgres"
 	"first/internal/server"
 	"first/internal/service"
+	"first/logs"
 	_ "github.com/lib/pq"
 	"log"
 )
 
 func main() {
+
+	file := logs.SetUpLog()
+	defer file.Close()
 
 	db, err := postgres.ConnectToPostgresDB(postgres.Config{
 		Host:     "localhost",
@@ -21,7 +25,7 @@ func main() {
 		SSLMode:  "disable",
 	})
 	if err != nil {
-		log.Fatalf("failed to connect database: %s", err.Error())
+		log.Fatalf("FATAL: failed to connect database: %s", err)
 	}
 
 	repo := repository.NewRepository(db)
@@ -31,7 +35,6 @@ func main() {
 
 	router := handlers.InitRoutes()
 	if err := srv.Run("8080", router); err != nil {
-		log.Fatal("error occurred while running the server")
+		log.Fatalf("FATAL: error occurred while running the server: %s", err)
 	}
-	log.Println("Server started")
 }

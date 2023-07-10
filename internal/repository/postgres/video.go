@@ -15,6 +15,7 @@ func NewVideoPostgres(db *sqlx.DB) *VideoPostgres {
 
 func (r *VideoPostgres) GetVideoFilename(lessonID int) (string, error) {
 	var filename string
+
 	query := fmt.Sprintf("SELECT video_filename FROM %s WHERE lesson_id = $1", "lesson.video")
 	if err := r.db.Get(&filename, query, lessonID); err != nil {
 		return "", err
